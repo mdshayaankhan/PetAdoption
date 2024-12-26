@@ -1,0 +1,48 @@
+/* KitchenSinkExample.css */
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog_container {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px; /* Decrease padding */
+  margin-bottom: 10px; /* Decrease margin bottom */
+  width: 250px; /* Decrease width */
+}
+
+.conimg1 {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.adopt_btn,
+.details_btn {
+  display: inline-block;
+  padding: 6px 12px; /* Decrease padding */
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 14px; /* Optional: Adjust font size */
+}
+
+.adopt_btn {
+  background-color: #4CAF50; /* Green */
+}
+
+.details_btn {
+  background-color: #008CBA; /* Blue */
+}
+
+.adopt_btn:hover,
+.details_btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Space between Adopt and Details buttons */
+.adopt_btn + .details_btn {
+  margin-left: 8px; /* Adjust margin */
+}

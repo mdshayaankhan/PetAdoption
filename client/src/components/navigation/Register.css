@@ -1,0 +1,121 @@
+/* Container styles */
+
+.containerx {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 21px; /* Updated border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Heading styles */
+.heading {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;  /* Space above */
+    margin-bottom: 20px;  /* Space below */
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFA07A;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.heading:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Form field styles */
+.form-group {
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%; /* Full width input */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.form-input:focus {
+    border-color: #1b1c1d; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+/* Button styles */
+.form-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFA07A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #060606;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup-title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.popup-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-button:hover {
+    background-color: #060606;
+}
